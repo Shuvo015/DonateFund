@@ -31,9 +31,9 @@
   
   <div class="flex justify-center gap-5 md:m-20 m-10">
     <button id="btn1" class="bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">Donation</button>
-    <button class=" bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">History</button>
+    <button id="btn2" class=" bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">History</button>
   </div>
-<div id="mainDiv" class="">
+<div id="mainDiv" class="hidden">
 
            <!-- CARD 1 Start HERE -->
            <div class="md:flex gap-10 border border-gray-200 container m-auto p-10 md:w-[1200px] rounded-xl">
@@ -98,7 +98,13 @@
 
 
 </div>
-  <footer class="bg-[#F9F7F3] h-24 mt-10 hidden"></footer>
+ <div id="history-main-div" class=" m-auto hidden">
+  <p class=" text-3xl">History</p>
+  <div id="transection-data">
+
+  </div>
+ </div>
+  <footer class="bg-[#F9F7F3] h-24 mt-10 "></footer>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DonateFund</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+             <!-- NAV START HERE -->
+             <nav class="bg-[#F9F7F3]  ">
+              <div class="flex justify-between  md:p-10 p-5 gap-5">
+                <div class="md:mt-2 bg-[#B4F461] px-5 py-3 rounded">
+                  <button class="md:text-3xl ">Blog</button>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img src="assets/logo.png">
+                  <h3 class="md:text-2xl text-sm">Donate Bangladesh</h3>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img class="md:w-10" src="assets/coin.png">
+                  <p id='account-balance'class="md:text-2xl">10000</p>
+                  <h3 class="md:text-2xl">BDT</h3>
+                </div>
+              </div>
+            </nav>
+
+
+            
+  
+  <div class="flex justify-center gap-5 md:m-20 m-10">
+    <button id="btn1" class="bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">Donation</button>
+    <button class=" bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">History</button>
+  </div>
+<div id="mainDiv" class="">
+
+           <!-- CARD 1 Start HERE -->
+           <div class="md:flex gap-10 border border-gray-200 container m-auto p-10 md:w-[1200px] rounded-xl">
+            <div>
+             <img src="assets/noakhali.png">
+            </div>
+            <div >
+              <div class="flex  gap-3 bg-gray-300 md:w-44 w-36 px-5 py-2  rounded-lg mt-5 md:mt-0 ">
+                <img class="w-10" src="assets/coin.png">
+                <p id="para1-amount"class="md:text-2xl">000</p>
+                <h3 class="md:text-2xl">BDT</h3>
+              </div>
+              <h2 class="font-bold md:text-2xl my-5">Donate for Flood at Noakhali, Bangladesh</h2>
+              <P class="text-base text-gray-500">
+                The recent floods in Noakhali have caused significant damage t<br> homes  infrastructure. Your donation will help provide essential<br> supplies and  to those affected by this disaster. Every contribution,<br> big or small, makes  difference. Please join us in supporting the relief<br> efforts and making a positive impact on the lives of those in need.
+        
+              </P>
+              <input id="donate-input-1" class="md:w-[550px] h-[40px] rounded border border-gray-300 pl-10 py-6 my-5" type="text" placeholder="Donate Amount"><br>
+              <button id="donate-btn-1"class=" hover:bg-[#B4F461] md:w-[550px] w-60 md:text-3xl py-3 rounded-lg border border-gray-300">Donate Now</button>
+            </div>
+          </div>
+                    <!-- CARD 2 Start HERE -->
+          <div class="md:flex gap-10 border border-gray-200 container m-auto p-10 md:w-[1200px] rounded-xl mt-8">
+            <div>
+            <img src="assets/feni.png">
+              </div>
+                <div >
+                  <div class="flex  gap-3 bg-gray-300 md:w-44 w-36 px-5 py-2  rounded-lg mt-5 md:mt-0 ">
+                  <img class="w-10" src="assets/coin.png">
+                  <p id="para2-amount"class="md:text-2xl">000</p>
+                  <h3 class="md:text-2xl">BDT</h3>
+                </div>
+                  <h2 class="font-bold md:text-2xl my-5">Donate for Flood Relief in Feni,Bangladesh</h2>
+                  <P class="text-base text-gray-500">
+                    The recent floods in Feni have devastated local communities, leading<br> to severe disruption and loss. Your generous donation will help<br> provide immediate aid, including food, clean water, and medical <br>supplies, to those affected by this calamity. Together, we can offer<br> crucial support and help rebuild lives in the aftermath of this disaster.<br> Every contribution counts towards making a real difference. Please<br> consider donating today to assist those in urgent need.
+                  
+                  </P>
+                    <input id ="donate-input-2"class="md:w-[550px] h-[40px] rounded border border-gray-300 pl-10 py-6 my-5" type="text" placeholder="Donate Amount"><br>
+                    <button id="donate-btn-2" class=" hover:bg-[#B4F461] md:w-[550px]  border border-gray-300 w-60 md:text-3xl py-3 rounded-lg">Donate Now</button>
+                </div>
+              </div>
+                           <!-- CARD 3 Start HERE -->
+          <div class="md:flex gap-10 border border-gray-200 container m-auto p-10 md:w-[1200px] rounded-xl mt-8">
+            <div>
+             <img src="assets/quota-protest.png">
+            </div>
+            <div >
+              <div class="flex  gap-3 bg-gray-300 md:w-44 w-36 px-5 py-2  rounded-lg mt-5 md:mt-0 ">
+                <img class="w-10" src="assets/coin.png">
+                <p id="para3-amount" class="md:text-2xl">000</p>
+                <h3 class="md:text-2xl">BDT</h3>
+              </div>
+              <h2 class="font-bold md:text-2xl my-5">Aid for Injured in the Quota Movement</h2>
+              <P class="text-base text-gray-500">
+                The recent Quota movement has resulted in numerous injuries and<br> significant hardship for many individuals. Your support is crucial in<br> providing medical assistance, rehabilitation, and necessary supplies <br>to those affected. By contributing, you help ensure that injured <br>individuals receive the care and support they need during this <br>challenging time. Every donation plays a vital role in alleviating their<br> suffering and aiding in their recovery. Please consider making a<br>donation to support these brave individuals in their time of need.
+        
+              </P>
+              <input id ="donate-input-3" class="md:w-[550px] h-[40px] rounded border border-gray-300 pl-10 py-6 my-5" type="text" placeholder="Donate Amount"><br>
+              <button id="donate-btn-3" class=" hover:bg-[#B4F461]  md:w-[550px] w-60 border border-gray-300 md:text-3xl py-3 rounded-lg">Donate Now</button>
+            </div>
+          </div>
+
+
+</div>
+  <footer class="bg-[#F9F7F3] h-24 mt-10 hidden"></footer>
+  <script src="main.js"></script>
+</body>
+</html>

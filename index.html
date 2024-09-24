@@ -4,36 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DonateFund</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link  rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+  
+<link  rel="stylesheet" href="style.css">
 </head>
 <body>
              <!-- NAV START HERE -->
-             <nav class="bg-[#F9F7F3]  ">
-              <div class="flex justify-between  md:p-10 p-5 gap-5">
-                <div class="md:mt-2 bg-[#B4F461] px-5 py-3 rounded">
-                  <button class="md:text-3xl ">Blog</button>
-                </div>
-                <div class="flex items-center gap-3">
-                  <img src="assets/logo.png">
-                  <h3 class="md:text-2xl text-sm">Donate Bangladesh</h3>
-                </div>
-                <div class="flex items-center gap-2">
-                  <img class="md:w-10" src="assets/coin.png">
-                  <p id='account-balance'class="md:text-2xl">10000</p>
-                  <h3 class="md:text-2xl">BDT</h3>
-                </div>
-              </div>
-            </nav>
-
-
-            
+             
   
-  <div class="flex justify-center gap-5 md:m-20 m-10">
+
+  <nav id="nav-blur" class="bg-[#f9f7f3b5] fixed top-0 left-0 right-0 z-50 backdrop-blur-s">
+    
+    <div class="flex justify-between  md:p-10 p-5 gap-5">
+      <!-- <div class="md:mt-2 bg-[#B4F461] px-5 py-3 rounded">
+        <button ><a href="blog.html">Blog</a></button>
+      </div> -->
+
+      <button class="md:mt-2 bg-[#B4F461] px-5 py-3 rounded"><a href="blog.html">Blog</a></button>
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png">
+        <h3 class="md:text-2xl text-sm">Donate Bangladesh</h3>
+      </div>
+      <div class="flex items-center gap-2 ">
+        <img class="md:w-10" src="assets/coin.png">
+        <p id='account-balance' class="md:text-2xl">10000</p>
+        <h3 class="md:text-2xl">BDT</h3>
+      </div>
+      
+    </div>
+    
+  </nav>
+  
+  <!-- Add padding or margin to the body to prevent content overlap -->
+  <div class="flex justify-center gap-5 md:m-20 m-10 pt-24 fixed top-0 left-0 right-0 z-50">
     <button id="btn1" class="bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">Donation</button>
     <button id="btn2" class=" bg-slate-200 hover:bg-[#B4F461] px-6 md:py-5 py-3 md:text-3xl rounded-lg">History</button>
   </div>
-<div id="mainDiv" class="hidden">
+
+  <div id="mainDiv" class="hidden mt-64">
 
            <!-- CARD 1 Start HERE -->
            <div class="md:flex gap-10 border border-gray-200 container m-auto p-10 md:w-[1200px] rounded-xl">
@@ -98,8 +108,8 @@
 
 
 </div>
- <div id="history-main-div" class=" m-auto hidden">
-  <p class=" text-3xl">History</p>
+ <div id="history-main-div" class=" m-auto hidden mt-48">
+  <p class=" text-3xl text-center">History</p>
   <div id="transection-data">
 
   </div>

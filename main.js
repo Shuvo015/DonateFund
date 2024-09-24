@@ -17,7 +17,7 @@ document.getElementById('btn2').addEventListener('click', function() {
                 //  FUND CALCULATION
 
 document.getElementById('donate-btn-1').addEventListener('click',function(){
-  
+      
   const donateInput1 = parseFloat(document.getElementById('donate-input-1').value)
   if(isNaN(donateInput1)|| donateInput1<0 ){
     alert("Please Enter Valid Amount")

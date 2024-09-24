@@ -14,11 +14,18 @@ document.getElementById('btn2').addEventListener('click', function() {
 });
 
 
-                //  FUND CALCULATION
+   
+
+
+//  FUND CALCULATION
 
 document.getElementById('donate-btn-1').addEventListener('click',function(){
+      //  MODAL
+  
       
-  const donateInput1 = parseFloat(document.getElementById('donate-input-1').value)
+  
+  // MODAL END
+      const donateInput1 = parseFloat(document.getElementById('donate-input-1').value)
   if(isNaN(donateInput1)|| donateInput1<0 ){
     alert("Please Enter Valid Amount")
     return
@@ -39,7 +46,7 @@ const remainingBalance= newAccountBalance - donateInput1
  p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
   'border-gray-400','border-1','rounded-md','p-4','my-4', 
 )
- p.innerText=` ${donateInput1} Donate for Flood at Noakhali, Bangladesh`
+ p.innerText=` ${donateInput1} TK Donate for Flood at Noakhali, Bangladesh`
  document.getElementById('transection-data').appendChild(p)
 
 
@@ -74,7 +81,7 @@ document.getElementById('donate-btn-2').addEventListener('click',function(){
  p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
   'border-gray-400','border-1','rounded-md','p-4','my-4', 
 )
- p.innerText=` ${donateInput1} Donate for Flood Relief in Feni,Bangladesh`
+ p.innerText=` ${donateInput1} TK Donate for Flood Relief in Feni,Bangladesh`
  document.getElementById('transection-data').appendChild(p)
  
  
@@ -109,7 +116,7 @@ document.getElementById('donate-btn-3').addEventListener('click',function(){
  p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
   'border-gray-400','border-1','rounded-md','p-4','my-4', 
 )
- p.innerText=` ${donateInput1} Aid for Injured in the Quota Movement`
+ p.innerText=` ${donateInput1} TK Aid for Injured in the Quota Movement`
  document.getElementById('transection-data').appendChild(p)
  if(donateInput1 > remainingBalance){
   alert("You Don't have suficient Balance")

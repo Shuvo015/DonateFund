@@ -19,109 +19,115 @@ document.getElementById('btn2').addEventListener('click', function() {
 
 //  FUND CALCULATION
 
-document.getElementById('donate-btn-1').addEventListener('click',function(){
-      //  MODAL
-  
-      
-  
-  // MODAL END
-      const donateInput1 = parseFloat(document.getElementById('donate-input-1').value)
-  if(isNaN(donateInput1)|| donateInput1<0 ){
-    alert("Please Enter Valid Amount")
-    return
-   }
+                 // DONATE-1
 
-   if(donateInput1 > 10000){
-    alert("You Don't have suficient Balance")
-    return
+
+document.getElementById('donate-btn-1').addEventListener('click', function() {
+  // Get the donation input and validate it
+  const donateInput1 = parseFloat(document.getElementById('donate-input-1').value);
+  if (isNaN(donateInput1) || donateInput1 <= 0) {
+    alert("Please Enter a Valid Amount");
+    return;
   }
-  const para1Amount = document.getElementById('para1-amount')
-  para1Amount.innerText = donateInput1
-  const accountBalance = document.getElementById('account-balance').innerText
-  const newAccountBalance = parseFloat(accountBalance)
-const remainingBalance= newAccountBalance - donateInput1
- accountBalance.innerText= remainingBalance
-    //  HISTORY 1
- const p= document.createElement("p")
- p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
-  'border-gray-400','border-1','rounded-md','p-4','my-4', 
-)
- p.innerText=` ${donateInput1} TK Donate for Flood at Noakhali, Bangladesh`
- document.getElementById('transection-data').appendChild(p)
 
+  // Get the current account balance
+  const accountBalanceElement = document.getElementById('account-balance');
+  const currentBalance = parseFloat(accountBalanceElement.innerText);
 
- if(donateInput1 > remainingBalance){
-  alert("You Don't have suficient Balance")
-  return
-}
- document.getElementById('account-balance').innerText = remainingBalance 
-})
-
-document.getElementById('donate-btn-2').addEventListener('click',function(){
-  
-  const donateInput1 = parseFloat(document.getElementById('donate-input-2').value)
-  if(isNaN(donateInput1)|| donateInput1<0 ){
-    alert("Please Enter Valid Amount")
-    return
-   }
-
-   if(donateInput1 > 10000){
-    alert("You Don't have suficient Balance")
-    return
+  // Check if donation amount exceeds the current balance
+  if (donateInput1 > currentBalance) {
+    alert("You Don't have sufficient balance");
+    return;
   }
-  const para1Amount = document.getElementById('para2-amount')
-  para1Amount.innerText = donateInput1
-  const accountBalance = document.getElementById('account-balance').innerText
-  const newAccountBalance = parseFloat(accountBalance)
-  
- const remainingBalance= newAccountBalance - donateInput1
- accountBalance.innerText= remainingBalance
-          //  HISTORY 2
- const p= document.createElement("p")
- p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
-  'border-gray-400','border-1','rounded-md','p-4','my-4', 
-)
- p.innerText=` ${donateInput1} TK Donate for Flood Relief in Feni,Bangladesh`
- document.getElementById('transection-data').appendChild(p)
- 
- 
- if(donateInput1 > remainingBalance){
-  alert("You Don't have suficient Balance")
-  return
-}
- document.getElementById('account-balance').innerText = remainingBalance 
-})
 
-document.getElementById('donate-btn-3').addEventListener('click',function(){
-  
-  const donateInput1 = parseFloat(document.getElementById('donate-input-3').value)
-  if(isNaN(donateInput1)|| donateInput1<0 ){
-    alert("Please Enter Valid Amount")
-    return
-   }
+  // Update the donated amount in para1-amount
+  const para1Amount = document.getElementById('para1-amount');
+  para1Amount.innerText = donateInput1;
 
-   if(donateInput1 > 10000){
-    alert("You Don't have suficient Balance")
-    return
+  // Calculate the new remaining balance
+  const remainingBalance = currentBalance - donateInput1;
+  
+  // Update the account balance on the UI
+  accountBalanceElement.innerText = remainingBalance;
+
+  // Add donation history
+  const p = document.createElement("p");
+  p.classList.add('text-lg', 'font-bold', 'my-2', 'border-gray-900', 'border', 'border-gray-400', 'border-1', 'rounded-md', 'p-4', 'my-4');
+  p.innerText = `${donateInput1} TK Donated for Flood at Noakhali, Bangladesh`;
+  document.getElementById('transection-data').appendChild(p);
+});
+
+                   // DONATE-2
+
+document.getElementById('donate-btn-2').addEventListener('click', function() {
+  // Get the donation input and validate it
+  const donateInput1 = parseFloat(document.getElementById('donate-input-2').value);
+  if (isNaN(donateInput1) || donateInput1 <= 0) {
+    alert("Please Enter a Valid Amount");
+    return;
   }
-  const para1Amount = document.getElementById('para3-amount')
-  para1Amount.innerText = donateInput1
-  const accountBalance = document.getElementById('account-balance').innerText
-  const newAccountBalance = parseFloat(accountBalance)
+
+  // Get the current account balance
+  const accountBalanceElement = document.getElementById('account-balance');
+  const currentBalance = parseFloat(accountBalanceElement.innerText);
+
+  // Check if donation amount exceeds the current balance
+  if (donateInput1 > currentBalance) {
+    alert("You Don't have sufficient balance");
+    return;
+  }
+
+  // Update the donated amount in para1-amount
+  const para1Amount = document.getElementById('para1-amount');
+  para1Amount.innerText = donateInput1;
+
+  // Calculate the new remaining balance
+  const remainingBalance = currentBalance - donateInput1;
   
- const remainingBalance= newAccountBalance - donateInput1
- accountBalance.innerText= remainingBalance
-           //  HISTORY 3
- const p= document.createElement("p")
- p.classList.add( 'text-lg', 'font-bold', 'my-2' ,'border-gray-900','border',   
-  'border-gray-400','border-1','rounded-md','p-4','my-4', 
-)
- p.innerText=` ${donateInput1} TK Aid for Injured in the Quota Movement`
- document.getElementById('transection-data').appendChild(p)
- if(donateInput1 > remainingBalance){
-  alert("You Don't have suficient Balance")
-  return
-}
- document.getElementById('account-balance').innerText = remainingBalance 
-})
+  // Update the account balance on the UI
+  accountBalanceElement.innerText = remainingBalance;
+
+  // Add donation history
+  const p = document.createElement("p");
+  p.classList.add('text-lg', 'font-bold', 'my-2', 'border-gray-900', 'border', 'border-gray-400', 'border-1', 'rounded-md', 'p-4', 'my-4');
+  p.innerText = `${donateInput1} TK Donated for Flood at Noakhali, Bangladesh`;
+  document.getElementById('transection-data').appendChild(p);
+});
+
+                  // DONATE-3
+
+document.getElementById('donate-btn-3').addEventListener('click', function() {
+  // Get the donation input and validate it
+  const donateInput1 = parseFloat(document.getElementById('donate-input-3').value);
+  if (isNaN(donateInput1) || donateInput1 <= 0) {
+    alert("Please Enter a Valid Amount");
+    return;
+  }
+
+  // Get the current account balance
+  const accountBalanceElement = document.getElementById('account-balance');
+  const currentBalance = parseFloat(accountBalanceElement.innerText);
+
+  // Check if donation amount exceeds the current balance
+  if (donateInput1 > currentBalance) {
+    alert("You Don't have sufficient balance");
+    return;
+  }
+
+  // Update the donated amount in para1-amount
+  const para1Amount = document.getElementById('para1-amount');
+  para1Amount.innerText = donateInput1;
+
+  // Calculate the new remaining balance
+  const remainingBalance = currentBalance - donateInput1;
+  
+  // Update the account balance on the UI
+  accountBalanceElement.innerText = remainingBalance;
+
+  // Add donation history
+  const p = document.createElement("p");
+  p.classList.add('text-lg', 'font-bold', 'my-2', 'border-gray-900', 'border', 'border-gray-400', 'border-1', 'rounded-md', 'p-4', 'my-4');
+  p.innerText = `${donateInput1} TK Donated for Flood at Noakhali, Bangladesh`;
+  document.getElementById('transection-data').appendChild(p);
+});
 
